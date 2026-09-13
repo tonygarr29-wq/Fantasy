@@ -1,0 +1,30 @@
+{
+  "name": "League",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "League Name"
+    },
+    "sport": {
+      "type": "string",
+      "enum": [
+        "NFL",
+        "NBA",
+        "MLB",
+        "NHL",
+        "Soccer"
+      ],
+      "default": "NFL"
+    },
+    "description": {
+      "type": "string"
+    },
+    "invite_code": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

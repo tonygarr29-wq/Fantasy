@@ -1,0 +1,63 @@
+{
+  "name": "Contest",
+  "type": "object",
+  "properties": {
+    "league_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "sport": {
+      "type": "string",
+      "enum": [
+        "NFL",
+        "NBA",
+        "MLB",
+        "NHL",
+        "Soccer"
+      ],
+      "default": "NFL"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "locked",
+        "completed"
+      ],
+      "default": "open"
+    },
+    "entry_fee": {
+      "type": "number",
+      "default": 0
+    },
+    "prize_pool": {
+      "type": "number",
+      "default": 0
+    },
+    "salary_cap": {
+      "type": "number",
+      "default": 50000
+    },
+    "contest_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "allowed_teams": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "captain_mode": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "league_id",
+    "name"
+  ]
+}

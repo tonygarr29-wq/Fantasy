@@ -1,0 +1,50 @@
+{
+  "name": "Player",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "team": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string",
+      "enum": [
+        "QB",
+        "RB",
+        "WR",
+        "TE",
+        "K",
+        "DEF"
+      ]
+    },
+    "salary": {
+      "type": "number",
+      "default": 0
+    },
+    "projected_points": {
+      "type": "number",
+      "default": 0
+    },
+    "actual_points": {
+      "type": "number",
+      "default": 0
+    },
+    "sport": {
+      "type": "string",
+      "enum": [
+        "NFL",
+        "NBA",
+        "MLB",
+        "NHL",
+        "Soccer"
+      ],
+      "default": "NFL"
+    }
+  },
+  "required": [
+    "name",
+    "position"
+  ]
+}

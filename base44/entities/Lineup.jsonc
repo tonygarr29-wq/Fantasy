@@ -1,0 +1,29 @@
+{
+  "name": "Lineup",
+  "type": "object",
+  "properties": {
+    "contest_id": {
+      "type": "string"
+    },
+    "player_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "captain_id": {
+      "type": "string"
+    },
+    "total_projected": {
+      "type": "number",
+      "default": 0
+    },
+    "total_actual": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "contest_id"
+  ]
+}
